@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location</title>
+    <div th:replace="header"></div>
+    <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'L adresse envoyée est : ' + ${address} + ' !'"></p>
+<p th:text="'lat : ' + ${lat}"></p>
+<p th:text="'long : ' + ${lng}"></p>
+<p th:text="'Température minimale : ' + ${forecast.forecast.getTmin()} + '°C'"></p>
+<p th:text="'Température maximale : ' + ${forecast.forecast.getTmax()} + '°C'"></p>
+<p th:text="'Probabilité de pluie : ' + ${forecast.forecast.getProbarain()} + '%'"></p>
+</body>
+</html>
